@@ -18,8 +18,9 @@ public class HomePage extends BasePage {
         return this;
     }
 
-    @FindBy(xpath = "//a[.=‘ Log in ’]")
+    @FindBy(xpath = "//a[@ng-reflect-router-link='login']")
     WebElement loginLink;
+
     public LoginPage clickOnLoginLink() {
         click(loginLink);
         return new LoginPage(driver);

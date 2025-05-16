@@ -22,6 +22,7 @@ Feature: Login
     Then User verify Error message is displayed
     And User quit browser
     Examples:
-      | roadrunner@mail.com   | qwertY!321 |
-      | roadrunner@mail.com   | !qwerty123  |
-      | roadrunner@mail.com   | Qwerty123! |
+      | email               | password   |
+      | roadrunner@mail.com | qtertY!321 |
+      | roadrunner@mail.com | !qwebty123 |
+      | roadrunner@mail.com | Qverty123! |

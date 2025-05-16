@@ -25,14 +25,15 @@ public class LoginPage  extends BasePage{
         return this;
     }
 
-    @FindBy(css = "button[type=‘submit’]")
+    @FindBy(css = "button[type='submit']")
     WebElement yallaButton;
+
     public LoginPage clickOnYallaButton() {
         click(yallaButton);
         return this;
     }
 
-    @FindBy(css = ".message")
+    @FindBy(css = "h2.message")
     WebElement successMessage;
     public LoginPage isMessageTextPresent(String message) {
         assert successMessage.getText().contains(message);
@@ -41,8 +42,10 @@ public class LoginPage  extends BasePage{
 
     public LoginPage enterWrongData(DataTable table) {
         List<Map<String, String>> dataTable = table.asMaps();
-        dataTable.get(0).get("email");
-        dataTable.get(0).get("password");
+        String email = dataTable.get(0).get("email");
+        String password = dataTable.get(0).get("password");
+        enterData(email, password);
         return this;
     }
 }
+

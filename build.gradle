@@ -10,11 +10,12 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.seleniumhq.selenium:selenium-java:4.23.0'
+    implementation 'org.seleniumhq.selenium:selenium-java:4.32.0'
     implementation 'io.cucumber:cucumber-java:7.20.0'
     implementation 'io.cucumber:cucumber-junit:7.20.0'
 }
 
 test {
-    useJUnitPlatform()
+    System.getProperty("cucumber.filter.tags")
 }
+

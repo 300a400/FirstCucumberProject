@@ -7,9 +7,8 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/resources/features",
     glue = "/com/ilcarro/stepDefinitions",
-    tags = "@validData",
-    plugin = {"pretty", "json:build/cucumber-report/cucumber.json"})
+    tags = "@wrongPassword",
+    plugin = {"pretty", "json:build/cucumber.json"})
 
 public class TestRunner {
-
 }

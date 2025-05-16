@@ -4,6 +4,7 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.PageFactory;
 
 import java.time.Duration;
@@ -22,7 +23,7 @@ public class BasePage {
     }
 
     public void openURL() {
-        driver.get("http://www.ilcarro.web.app");
+        driver.get("https://ilcarro.web.app");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
     }
 
