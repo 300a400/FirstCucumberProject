@@ -24,4 +24,5 @@ public class HomePage extends BasePage {
         click(loginLink);
         return new LoginPage(driver);
     }
+
 }

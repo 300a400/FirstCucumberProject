@@ -47,4 +47,8 @@ public class BasePage {
             return false;
         }
     }
+
+    public void tearDown() {
+        driver.quit();
+    }
 }

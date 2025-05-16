@@ -4,3 +4,4 @@ Feature: HomePage
     Given User launches chrome browser
     When User open ilcarro HomePage
     Then User verifies HomePage title
+    And User quit browser
